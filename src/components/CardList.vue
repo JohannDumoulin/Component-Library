@@ -7,7 +7,7 @@ import CardItem from "./cardList/CardItem.vue";
     <section>
         <TitleComponent msg="Card List" />
 
-        <div class="container mx-auto">
+        <div class="container mx-auto px-8">
             <div class="flex flex-wrap -m-4">
                 <CardItem v-for="card in 7"/>
             </div>

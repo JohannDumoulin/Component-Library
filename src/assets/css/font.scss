@@ -1,0 +1,20 @@
+@mixin font-face($name, $size) {
+    @font-face {
+        font-family: $name;
+        src: url('/assets/fonts/#{$name}/#{$name}-#{$size}.eot');
+        src: url('/assets/fonts/#{$name}/#{$name}-#{$size}.eot') format('embedded-opentype'),
+        url('/assets/fonts/#{$name}/#{$name}-#{$size}.woff2') format('woff2'),
+        url('/assets/fonts/#{$name}/#{$name}-#{$size}.woff') format('woff'),
+        url('/assets/fonts/#{$name}/#{$name}-#{$size}.ttf') format('truetype');
+        font-weight: $size;
+    }
+}
+
+@include font-face('DynaPuff', 400);
+@include font-face('DynaPuff', 500);
+@include font-face('DynaPuff', 600);
+@include font-face('DynaPuff', 700);
+
+@include font-face('PassionOne', 400);
+@include font-face('PassionOne', 700);
+@include font-face('PassionOne', 900);

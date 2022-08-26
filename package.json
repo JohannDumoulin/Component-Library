@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "embla-carousel-class-names": "^7.0.1",
+    "embla-carousel-vue": "^7.0.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
